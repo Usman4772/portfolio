@@ -1,3 +1,4 @@
+//@ts-ignore
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
@@ -12,10 +13,10 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 export const metadata: Metadata = {
-  title: "Hassan Raza | MERN Stack Developer",
+  title: "Usman Ali | MERN Stack Developer",
   description: "Passionate MERN Stack Developer crafting innovative web solutions with cutting-edge technologies. Explore my portfolio to see how I bring digital ideas to life.",
-  keywords: ["MERN Stack", "Web Developer", "React Developer", "Node.js", "Portfolio", "Hassan Raza"],
-  authors: [{ name: "Hassan Raza" }],
+  keywords: ["MERN Stack", "Web Developer", "React Developer", "Node.js", "Portfolio", "Usman Ali"],
+  authors: [{ name: "Usman Ali" }],
   icons: {
     icon: [
       {
@@ -36,16 +37,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://hassanraza.dev",
-    title: "Hassan Raza | MERN Stack Developer",
+    title: "Usman Ali | MERN Stack Developer",
     description: "Passionate MERN Stack Developer crafting innovative web solutions with cutting-edge technologies.",
-    siteName: "Hassan Raza Portfolio",
+    siteName: "Usman Ali Portfolio",
     images: [{
        url: "/logoicon.png",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hassan Raza | MERN Stack Developer",
+    title: "usman Ali | MERN Stack Developer",
     description: "Passionate MERN Stack Developer crafting innovative web solutions with cutting-edge technologies.",
     images: ["/logoicon.png"],
   },

@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import img from "@/app/img/asli4.png";
+import profilePic from "@/app/img/profilePic.jgp";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 function getCurrentTimePST() {
   const now = new Date();
   const options = {
@@ -29,32 +30,32 @@ function About() {
   const person = [
     {
       id: 1,
-      name: "Hassan Raza",
+      name: "Usman Ali",
       designation: "MERN Developer",
-      image: img,
+      image: profilePic,
     },
   ];
-  useGSAP(()=>{
+  useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".foot",
-        start: "top 65%", 
-        end: "bottom bottom", 
+        start: "top 65%",
+        end: "bottom bottom",
       },
-    })
-    tl.from('.fot',{
+    });
+    tl.from(".fot", {
       y: 200,
       duration: 1,
       ease: "power2.Out",
-      stagger:.3,
-    })
-    tl.from('.btn',{
-      scale:0,
+      stagger: 0.3,
+    });
+    tl.from(".btn", {
+      scale: 0,
       duration: 1,
       ease: "elastic.out",
-      stagger:.3,
-    })
-  })
+      stagger: 0.3,
+    });
+  });
   return (
     <div className="w-full foot  bg-[#1D1D21] px-5  py-5">
       <div className="w-full  pt-36 flex flex-col gap-20 md:px-32">
@@ -76,18 +77,19 @@ function About() {
               </h1>
             </div>
           </div>
-          <div 
+          <div
             className="cursor-pointer hover:scale-110 transition-transform duration-300"
             onClick={() => {
-              const arrow = document.querySelector('.arrow-svg');
-              gsap.timeline()
+              const arrow = document.querySelector(".arrow-svg");
+              gsap
+                .timeline()
                 .to(arrow, {
                   rotate: 45,
                   scale: 1.5,
                   y: -10,
                   x: 10,
                   duration: 0.3,
-                  ease: "power2.out"
+                  ease: "power2.out",
                 })
                 .to(arrow, {
                   rotate: 0,
@@ -95,7 +97,7 @@ function About() {
                   y: 0,
                   x: 0,
                   duration: 0.5,
-                  ease: "elastic.out(1, 0.3)"
+                  ease: "elastic.out(1, 0.3)",
                 });
             }}
           >
@@ -129,13 +131,13 @@ function About() {
       <div className="md:px-32 py-10 flex flex-col md:flex-row gap-5">
         <button className="btn relative overflow-hidden font-neue_montreal tracking-wider px-4 py-5 rounded-full text-white border border-gray-200 group">
           <span className="relative z-10 group-hover:text-black transition-colors duration-300">
-            hassanwebdev0896@gmail.com
+            m.usman.alix47@gmail.com
           </span>
           <span className="absolute inset-0 bg-white transform scale-y-0 origin-top group-hover:scale-y-100 transition-transform duration-300 ease-out"></span>
         </button>
         <button className="btn relative overflow-hidden font-neue_montreal tracking-wider px-4 py-5 rounded-full text-white border border-gray-200 group">
           <span className="relative z-10 group-hover:text-black transition-colors duration-300">
-            +923265527246
+            +92 300 5808043
           </span>
           <span className="absolute inset-0 bg-white transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-out"></span>
         </button>
@@ -167,20 +169,20 @@ function About() {
               </h1>
               <div className="flex gap-3 justify-between md:justify-normal w-full">
                 <a
-                  className="btn font-neue_montreal_Medium text-white relative overflow-hidden group px-2 py-1 rounded-full"
-                  href="https://twitter.com/HassanR089"
+                  className="btn font-neue_montreal_Medium text-white relative overflow-hidden group  px-2 py-1 rounded-full"
+                  href="https://github.com/Usman4772/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="  relative z-10 group-hover:text-black transition-colors duration-300">
-                    Twitter
+                  <span className="relative z-10 group-hover:text-black transition-colors duration-300">
+                    GitHub
                   </span>
                   <span className="absolute inset-0 bg-white transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-out"></span>
                   <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white transform scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
                 </a>
                 <a
                   className="btn font-neue_montreal_Medium text-white relative overflow-hidden group  px-2 py-1 rounded-full"
-                  href="https://linkedin.com/in/muhammad-hassan-raza-a64b9b306"
+                  href="https://www.linkedin.com/in/usmanalix47"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -193,24 +195,12 @@ function About() {
 
                 <a
                   className="btn font-neue_montreal_Medium text-white relative overflow-hidden group  px-2 py-1 rounded-full"
-                  href="https://instagram.com/hassan__0__1__0"
+                  href="https://www.instagram.com/usmanali.2909?igsh=MWV2NnRiMndubHFhZQ=="
                   target="_blank"
                   rel="noreferrer"
                 >
                   <span className="relative z-10 group-hover:text-black transition-colors duration-300">
                     Instagram
-                  </span>
-                  <span className="absolute inset-0 bg-white transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-out"></span>
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white transform scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
-                </a>
-                <a
-                  className="btn font-neue_montreal_Medium text-white relative overflow-hidden group  px-2 py-1 rounded-full"
-                  href="https://dev.to/hassanwebdev"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="relative z-10 group-hover:text-black transition-colors duration-300">
-                    Dev
                   </span>
                   <span className="absolute inset-0 bg-white transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-out"></span>
                   <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white transform scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>

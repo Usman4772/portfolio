@@ -72,8 +72,11 @@ export default function MeteorDemo() {
       </div>
       <div className="relative w-full flex flex-col md:flex-row gap-14 p-10 items-center ">
         <p id="left" className="font-neue_montreal_Medium text-3xl opacity-90">
-          Helping brands to stand out in the digital era. Together we will set
-          the new status quo. No nonsense, always on the cutting edge.
+          MERN Stack Developer with 1.5+ years of experience building scalable
+          full-stack applications. Skilled in clean architecture, responsive UI,
+          and robust API design. Delivered production-ready platforms including
+          a custom payment gateway system and a real-time app with AI-powered
+          chat.
         </p>
         <p id="right" className="font-neue_montreal opacity-70">
           The combination of my passion for design, code & interaction positions

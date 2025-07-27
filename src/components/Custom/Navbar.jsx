@@ -93,7 +93,7 @@ const Navbar = ({ background }) => {
           </div>
           <div className="w-[7.2rem] whitespace-nowrap overflow-hidden">
             <h1 className="jk font-neue_montreal_Medium">
-              Code by Hassan Raza
+              Code by Usman Ali
             </h1>
           </div>
         </div>

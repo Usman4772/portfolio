@@ -12,6 +12,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Case from "@/app/img/Case.png";
 import Vyafac from "@/app/img/vyafac.png";
+import linkTogether from "@/app/img/linkTogether.png";
 
 gsap.registerPlugin(ScrollTrigger);
 function Projects() {
@@ -52,16 +53,10 @@ function Projects() {
   const projects = [
     {
       project: "Vyafac",
-      url: "https://vyafac.com/",
+      url: "https://app.vyafac.com/",
       text: " Interaction & Development",
       img: Vyafac,
       isStatic: true,
-    },
-    {
-      project: "Career Year",
-      url: "https://career-years.com/",
-      text: " Interaction & Development",
-      img: career,
     },
     {
       project: "MockMaster AI",
@@ -70,17 +65,17 @@ function Projects() {
       img: mockmaster,
     },
     {
-      project: "Case Solver AI",
-      url: "https://casesolver.ai/login",
+      project: "Link To Gether",
+      url: "https://link2gether-webapp.vercel.app/dashboard",
       text: " Interaction & Development",
-      img: Case,
+      img: linkTogether,
     },
-    {
-      project: "Blogging Platform",
-      url: "https://bloging-site-peach.vercel.app/",
-      text: " Interaction & Development",
-      img: bloging,
-    },
+    // {
+    //   project: "Blogging Platform",
+    //   url: "https://bloging-site-peach.vercel.app/",
+    //   text: " Interaction & Development",
+    //   img: bloging,
+    // },
   ];
   useGSAP(() => {
     responsive.add("(min-width: 651px)", () => {
@@ -105,13 +100,14 @@ function Projects() {
             Biggest achievements
           </h1>
           <p className="font-neue_montreal opacity-70 text-sm md:text-base">
-            MockMaster – Your ultimate AI-powered interview platform for
-            business cases. 🚀 <br className="hidden sm:block" /> Conduct
-            real-time, intelligent mock interviews with instant feedback. 📊{" "}
-            <br className="hidden sm:block" /> Sharpen your problem-solving
-            skills with dynamic, case-based AI evaluation. 💡{" "}
-            <br className="hidden sm:block" /> Ace your next big interview with
-            MockMaster – Practice. Perform. Succeed! 🎯
+            Vyafac – A modern, secure payment gateway built for seamless online
+            transactions. 💳
+            <br className="hidden sm:block" /> Accept one-time and recurring
+            payments with automated tax handling and flexible billing. ⚙️
+            <br className="hidden sm:block" /> Manage subscriptions, invoices,
+            and webhooks through a responsive, real-time dashboard. 📊
+            <br className="hidden sm:block" /> Simplify your payment
+            infrastructure with Vyafac – Fast. Scalable. Reliable. 🚀
           </p>{" "}
           <BorderBeam
             size={mobile ? 250 : 400}
@@ -124,7 +120,7 @@ function Projects() {
         </div>
         <div className="mt-4 md:mt-0">
           <LinkPreview
-            url={`https://mockmaster-inky.vercel.app/`}
+            url={`https://app.vyafac.com/`}
             width={mobile ? 350 : 700}
             height={mobile ? 250 : 400}
             quality={100}
@@ -133,16 +129,16 @@ function Projects() {
             <div className="w-full relative h-auto md:h-80 border-y-1 border-gray-300 flex flex-col md:flex-row justify-between items-center transition-all gap-4 md:gap-0 py-4 md:py-0 hover:px-2 md:hover:px-5 hover:opacity-50">
               <div>
                 <h1 className="text-xl md:text-2xl font-neue_montreal_Medium uppercase text-center md:text-left">
-                  MockMaster.AI
+                  Payment Gateway
                 </h1>
               </div>
 
               <div className="w-full md:w-auto px-4 md:px-0">
                 <Image
-                  src={mockmaster}
+                  src={Vyafac}
                   width={mobile ? 300 : 600}
                   height={mobile ? 300 : 600}
-                  alt="MockMaster.AI"
+                  alt="VYAFAC"
                   className="rounded-lg max-w-full h-auto mx-auto"
                 />
               </div>

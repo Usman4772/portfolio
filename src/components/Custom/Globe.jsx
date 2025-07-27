@@ -71,12 +71,6 @@ export default function IconCloudDemo() {
         "Experienced in developing modern web applications with Next.js.",
     },
     {
-      skill: "Nest.js",
-      description:
-        "Experienced in developing modern web applications backedns with Nest.js framework.",
-    },
-
-    {
       skill: "Node.js",
       description:
         "Skilled in developing scalable server-side applications using Node.js.",
