@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { LinkPreview } from "@/components/ui/link-preview";
 import mockmaster from "@/components/ui/MockMaster.png";
-import bloging from "@/app/img/Screenshot 2024-07-07 121628.png";
 import Image from "next/image";
+import gymStore from "@/app/img/gymStore.png";
 import { BorderBeam } from "../ui/border-beam";
 import gsap from "gsap";
 import career from "@/app/img/career.png";
@@ -70,12 +70,12 @@ function Projects() {
       text: " Interaction & Development",
       img: linkTogether,
     },
-    // {
-    //   project: "Blogging Platform",
-    //   url: "https://bloging-site-peach.vercel.app/",
-    //   text: " Interaction & Development",
-    //   img: bloging,
-    // },
+    {
+      project: "Gym Store",
+      url: "https://onlinegymstore.netlify.app/",
+      text: " Interaction & Development",
+      img: gymStore,
+    },
   ];
   useGSAP(() => {
     responsive.add("(min-width: 651px)", () => {
