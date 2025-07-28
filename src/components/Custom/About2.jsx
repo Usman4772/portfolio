@@ -1,8 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import img from "@/app/img/asli4.png";
-import profilePic from "@/app/img/profilePic.jgp";
+import profilePic from "@/app/img/profilePic.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
